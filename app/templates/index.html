@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BaseCoat: Formula Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swagcity.css') }}">
+
+    <link rel='shortcut icon' href="{{ url_for('static',filename='images/paintbrush.ico') }}" type='image/x-icon'/ >
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static',filename='javascript/debounce.js') }}"></script>
+    <script src="{{ url_for('static',filename='javascript/index_view.js') }}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <img class="icon" src="{{ url_for('static',filename='images/paintbrush.svg') }}" />
+            <h1>BaseCoat: Formula Search <br />
+                <small>An application to help you find the correct formula. No more index cards.</small>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="input-group">
+            <input id="search_bar" type="text" class="form-control input-lg" placeholder="Color name or number" />
+            <span class="input-group-btn">
+                <button class="btn btn-success btn-lg" type="button">
+                    <i class="glyphicon glyphicon-plus"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+    <br /><br />
+    <div class="containter">
+        <!-- generate table -->
+        {% include "table.html" %}
+    </div>
+</body>
+</html>
