@@ -1,11 +1,13 @@
 .mainlogo{
     height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.formula{
-    cursor: pointer;
-}
-
-body {
-    overflow-x: hidden;
+.container{
+    position: absolute;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
