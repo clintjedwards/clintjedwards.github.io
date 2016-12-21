@@ -5,71 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swagalldayerryday.css') }}">
+    <link rel='shortcut icon' href="{{ url_for('static',filename='images/sun.svg') }}" type='image/x-icon' />
 
-    <link rel='shortcut icon' href="{{ url_for('static',filename='images/sun.svg') }}" type='image/x-icon'/ >
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swagalldayerryday.css') }}">
 </head>
 <body>
-    <div class="page-container">
-        <div class="container">
-          <div class="row row-offcanvas row-offcanvas-left">
 
-            <!-- sidebar -->
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-                <div class="page-header text-center">
-                    <img class="icon" src="{{ url_for('static',filename='images/sun.svg') }}" />
-                    <h1>Clint J Edwards</h1>
-                </div>
-                <ul class="nav">
-                  <li><a href="#"><i class="material-icons">home</i>&nbsp;Home</a></li>
-                  <li><a href="#"><i class="material-icons">school</i>&nbsp;Projects</a></li>
-                  <li><a href="#"><i class="material-icons">description</i>&nbsp;Linkedin</a></li>
-                  <li><a href="#"><i class="material-icons">computer</i>&nbsp;Github</a></li>
-                </ul>
-            </div>
+<div class="container">
+    <h1><img class="icon mainlogo" src="{{ url_for('static',filename='images/sun.svg') }}" />Clint J Edwards</h1>
 
-            <!-- main area -->
-            <div class="col-xs-12 col-sm-9">
-              <h1>Shrink Width to Collapse Sidebar</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in nisi eu arcu tempus vehicula.
-                Nulla faucibus cursus metus in sagittis. Nunc elit leo, imperdiet in ligula in, euismod varius est.
-                Aenean pellentesque lorem a porttitor placerat. Vestibulum placerat nunc ac rutrum fringilla. Donec
-                arcu leo, tempus adipiscing volutpat id, congue in purus. Pellentesque scelerisque mattis nibh vel
-                semper. Sed a risus purus. Fusce pulvinar, velit eget rhoncus facilisis, enim elit vulputate nisl, a
-                euismod diam metus eu enim. Nullam congue justo vitae justo accumsan, sit amet malesuada nulla sagittis.
-                Nam neque tellus, tristique in est vel, sagittis congue turpis. Aliquam nulla lacus, laoreet dapibus
-                odio vitae, posuere volutpat magna. Nam pulvinar lacus in sapien feugiat, sit amet vestibulum enim
-                eleifend. Integer sit amet ante auctor, lacinia sem quis, consectetur nulla.</p>
+    <p class="lead">An aspiring master of all trades, minimalist, Jiu-jitsu practitioner. Working on devops at <a href="https://www.addepar.com">Addepar</a> and supporting the robot uprising one scripted chmod 777 at a time.
+    Based in Brooklyn, NY.</p>
+    <ul class="list-inline">
+        <li><a href="#">Projects</a></li>
+        <li><a href="https://github.com/cje3296">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/clintjedwards">Linkedin</a></li>
+    </ul>
+</div>
 
-              <p>Vestibulum porttitor massa eget pellentesque eleifend. Suspendisse tempor, nisi eu placerat auctor,
-                est erat tempus neque, pellentesque venenatis eros lorem vel quam. Nulla luctus malesuada porttitor.
-                Fusce risus mi, luctus scelerisque hendrerit feugiat, volutpat gravida nisi. Quisque facilisis risus
-                in lacus sagittis malesuada. Suspendisse non purus diam. Nunc commodo felis sit amet tortor
-                adipiscing varius. Fusce commodo nulla quis fermentum hendrerit. Donec vulputate, tellus sed
-                venenatis sodales, purus nibh ullamcorper quam, sit amet tristique justo velit molestie lorem.</p>
-
-              <p>Fusce sollicitudin lacus lacinia mi tincidunt ullamcorper. Aenean velit ipsum, vestibulum nec
-                tincidunt eu, lobortis vitae erat. Nullam ultricies fringilla ultricies. Sed euismod nibh quis
-                tincidunt dapibus. Nulla quam velit, porta sit amet felis eu, auctor fringilla elit. Donec
-                convallis tincidunt nibh, quis pellentesque sapien condimentum a. Phasellus purus dui, rhoncus
-                id suscipit id, ornare et sem. Duis aliquet posuere arcu a ornare. Pellentesque consequat libero
-                id massa accumsan volutpat. Fusce a hendrerit lacus. Nam elementum ac eros eu porttitor.
-                Phasellus enim mi, auctor sit amet luctus a, commodo fermentum arcu. In volutpat scelerisque
-                quam, nec lacinia libero.</p>
-
-              <p>Aliquam a lacinia orci, iaculis porttitor neque. Nullam cursus dolor tempus mauris posuere, eu
-                scelerisque sem tincidunt. Praesent blandit sapien at sem pulvinar, vel egestas orci varius.
-                Praesent vitae purus at ante aliquet luctus vel quis nibh. Mauris id nulla vitae est lacinia
-                rhoncus a vel justo. Donec iaculis quis sapien vel molestie. Aliquam sed elementum orci.
-                Vestibulum tristique tempor risus et malesuada. Sed eget ligula sed quam placerat dapibus.
-                Integer accumsan ac massa at tempus.</p>
-
-            </div><!-- /.col-xs-12 main -->
-        </div><!--/.row-->
-      </div><!--/.container-->
-    </div><!--/.page-container-->
 </body>
 </html>
