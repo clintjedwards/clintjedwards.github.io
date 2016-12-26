@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal website. Written with flask.
+Simple personal website. Written with flask.
 
 https://clintjedwards.com
 
@@ -9,51 +9,41 @@ Icons from [Iconfinder](https://www.iconfinder.com/Neolau1119)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ```
-Give examples
+git clone git@github.com:cje3295/personal_website.git
 ```
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
 ```
-Give the example
+cd personal_website
+virtualenv venv
+source ./venv/bin/activate
 ```
 
-And repeat
-
 ```
-until finished
+pip install -r requirements.txt
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+```
+cp example_config.py config.py
+```
 
-## Running the tests
+```
+os.urandom(64).baseencode
+```
 
-Explain how to run the automated tests for this system
+```
+python manage.py --help
+```
 
-## Application Management
-## Migrating the database
-## Populating the database
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+```
+python manage.py -hlocalhost -p 5000
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Flask](http://flask.pocoo.org/) - The python web framework used
 
 ## Authors
 
