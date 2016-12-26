@@ -4,7 +4,7 @@ Personal website. Written with flask.
 
 https://clintjedwards.com
 
-Icons from [Iconfinder](https://www.iconfinder.com/)
+Icons from [Iconfinder](https://www.iconfinder.com/Neolau1119)
 
 
 ## Getting Started
