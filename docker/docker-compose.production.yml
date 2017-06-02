@@ -20,6 +20,5 @@ services:
         depends_on:
             - app
 
-
 volumes:
     personal_website_volume:

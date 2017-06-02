@@ -10,7 +10,7 @@ RUN apt-get update -y && apt-get install -y \
     python-setuptools \
     uwsgi
 
-WORKDIR /var/www/incident
+WORKDIR /var/www/personal_website
 
 #Install python packages
 COPY ./requirements.txt .

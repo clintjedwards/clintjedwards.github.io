@@ -8,7 +8,6 @@ services:
             - ${PERSONAL_WEBSITE_DIRECTORY}:/var/www/personal_website
             - personal_website_volume:/tmp
 
-
     nginx:
         image: cje3295/paraphernalia/personal_website:nginx
         volumes:
@@ -18,7 +17,6 @@ services:
             - "443:443"
         depends_on:
             - app
-
 
 volumes:
     personal_website_volume:
