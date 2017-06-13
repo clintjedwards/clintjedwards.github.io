@@ -16,4 +16,6 @@ WORKDIR /var/www/personal_website
 COPY ./requirements.txt .
 RUN pip install -r ./requirements.txt
 
+COPY . /var/www/personal_website
+
 ENTRYPOINT ["/usr/local/bin/uwsgi", "--ini", "/var/www/personal_website/personal_website.ini"]
