@@ -4,12 +4,16 @@ version: "3"
 services:
     app:
         image: cje3295/personal_website:app
+        env_file:
+            - production.env
         volumes:
             - ${PERSONAL_WEBSITE_CONFIG_PATH}:/var/www/personal_website/config/config.py
             - personal_website_volume:/tmp
 
     nginx:
         image: cje3295/personal_website:nginx
+        env_file:
+            - production.env
         volumes:
             - personal_website_volume:/tmp
             - ${SSL_CERT_PATH}:/etc/ssl/certs/personal_website.crt
