@@ -8,19 +8,13 @@ services:
             - development.env
         volumes:
             - ${PERSONAL_WEBSITE_DIRECTORY}:/var/www/personal_website
-            - personal_website_volume:/tmp
 
     nginx:
         image: cje3295/personal_website:nginx
         env_file:
             - development.env
-        volumes:
-            - personal_website_volume:/tmp
         ports:
             - "80:80"
             - "443:443"
         depends_on:
             - app
-
-volumes:
-    personal_website_volume:
