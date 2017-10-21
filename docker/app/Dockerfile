@@ -18,4 +18,6 @@ RUN pip install -r ./requirements.txt
 
 COPY . /var/www/personal_website
 
+EXPOSE 8080
+
 ENTRYPOINT ["/usr/local/bin/uwsgi", "--ini", "/var/www/personal_website/personal_website.ini"]
