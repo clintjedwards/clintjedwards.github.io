@@ -21,7 +21,6 @@ job "personal" {
       }
       env {
         DEBUG = false
-        SECRET_KEY = "[redacted]"
       }
 
       service {
