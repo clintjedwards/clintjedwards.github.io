@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Clint Edwards <clint.j.edwards@gmail.com>
+LABEL maintainer="Clint Edwards <clint.j.edwards@gmail.com>"
 
 #Install required packages
 RUN apt-get update -y && apt-get install -y \

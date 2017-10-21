@@ -9,10 +9,21 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swagalldayerryday.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/swagalldayerryday.css') }}">  
+    <script type="text/javascript">
+        window.onload = function() {
+            var techWords = ["kublet", "nomad init", "vault auth", "go build", "chmod 777"]
+
+            var rnd = Math.ceil(Math.random() * techWords.length - 1)
+
+            document.getElementById("tech_name").innerText = techWords[rnd]
+        };
+    </script> 
 </head>
 
 <body>
+
+
 
 <div class="container">
     <div class="row">
@@ -22,7 +33,9 @@
             <p class="lead">
                 An aspiring master of all trades, minimalist, <a href="http://clockworkbjj.com/">jiu-jitsu</a> practitioner, and
                 <a href="http://www.csboxinggym.com/">boxing</a> hobbyist. Working on devops 
-                at <a href="https://www.petalcard.com/">Petal</a> and supporting the robot uprising one kubelet at a time.
+                at <a href="https://www.petalcard.com/">Petal</a> and supporting the robot uprising one <span id="tech_name">kublet</span>
+                at a time.
+                <br />
                 Based in Brooklyn, NY.
             </p>
 
