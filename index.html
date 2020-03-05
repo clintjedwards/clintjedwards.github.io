@@ -1,60 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Clint J Edwards</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" type="image/ico" href="images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/ico"
+      href="images/favicon.ico"
+      type="image/x-icon"
+    />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/swagalldayerryday.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/swagalldayerryday.css" />
     <script type="text/javascript">
-        window.onload = function () {
-            var techWords = ["kubectl scale", "nomad minion", "vault cluster", "go build", "chmod 777",
-                "go mod tidy"
-            ]
+      window.onload = function() {
+        var techWords = [
+          "kubectl scale",
+          "nomad minion",
+          "vault cluster",
+          "go build",
+          "chmod 777",
+          "go mod tidy"
+        ];
 
-            var rnd = Math.ceil(Math.random() * techWords.length - 1)
+        var rnd = Math.ceil(Math.random() * techWords.length - 1);
 
-            document.getElementById("tech_name").innerText = techWords[rnd]
-        };
+        document.getElementById("tech_name").innerText = techWords[rnd];
+      };
     </script>
-</head>
+  </head>
 
-<body>
-
-
-
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h1><img class="icon mainlogo" src="images/sun.svg" /><br />Clint J Edwards</h1>
+      <div>
+        <div>
+          <h1>
+            <img class="icon mainlogo" src="images/sun.svg" /><br />Clint J
+            Edwards
+          </h1>
 
-                <p class="lead">
-                    An aspiring master of all trades, minimalist, <a href="https://clockworkbjj.com/">jiu-jitsu</a>
-                    practitioner, and
-                    <a href="https://www.worktrainfight.com">boxing</a> hobbyist. On the vanguard of site reliability
-                    engineering
-                    at <a href="https://landing.google.com/sre/">Google NYC</a> and supporting the robot uprising one
-                    <a id="tech_name">git push -f</a>
-                    at a time.
-                    <br />
-                    Based in Brooklyn, NY.
-                </p>
+          <p class="lead">
+            An aspiring master of all trades, minimalist,
+            <a href="http://masterskya.com/">jiu-jitsu</a>
+            practitioner, and
+            <a href="#">boxing</a> hobbyist. On the vanguard of site reliability
+            engineering at
+            <a href="https://landing.google.com/sre/">Google NYC</a> and
+            supporting the robot uprising one
+            <a id="tech_name">git push -f</a>
+            at a time.
+            <br />
+            Based in Brooklyn, NY.
+          </p>
 
-                <ul class="list-inline">
-                    <li><a href="https://github.com/clintjedwards">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/clintjedwards">Linkedin</a></li>
-                    <li><a href="https://keybase.io/cje3295">Keybase</a></li>
-                </ul>
-            </div>
+          <ul>
+            <li><a href="https://github.com/clintjedwards">Github</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/clintjedwards">Linkedin</a>
+            </li>
+            <li><a href="https://keybase.io/cje3295">Keybase</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
