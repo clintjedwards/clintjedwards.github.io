@@ -1,72 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Clint J Edwards</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="icon"
-      type="image/ico"
-      href="images/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" type="image/ico" href="images/favicon.ico" type="image/x-icon" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/swagalldayerryday.css" />
     <script type="text/javascript">
-      window.onload = function () {
-        var techWords = [
-          "kubectl scale",
-          "nomad minion",
-          "vault cluster",
-          "go build",
-          "chmod 777",
-          "go mod tidy",
-          "cargo init",
-          "httpie GET",
-        ];
+        window.onload = function () {
+            var techWords = [
+                "kubectl scale",
+                "nomad minion",
+                "vault cluster",
+                "go build",
+                "chmod 777",
+                "go mod tidy",
+                "cargo init",
+            ];
 
-        var rnd = Math.ceil(Math.random() * techWords.length - 1);
+            var rnd = Math.ceil(Math.random() * techWords.length - 1);
 
-        document.getElementById("tech_name").innerText = techWords[rnd];
-      };
+            document.getElementById("tech_name").innerText = techWords[rnd];
+        };
     </script>
-  </head>
+</head>
 
-  <body>
-    <div class="container">
-      <div>
-        <div>
-          <h1>
+<body>
+    <div class="header">
+        <h1>
             <img class="icon mainlogo" src="images/sun.svg" /><br />Clint J
             Edwards
-          </h1>
-
-          <p class="lead">
-            An aspiring master of all trades, minimalist,
-            <a href="http://masterskya.com/">jiu-jitsu</a>
-            practitioner, and
-            <a href="#">boxing</a> hobbyist. Writing software for
-            <a href="https://robinhood.engineering/">Robinhood Markets</a>.
-            Supporting the robot uprising one <a id="tech_name">git push -f</a>
-            at a time.
-            <br />
-            Based in Brooklyn, NY.
-          </p>
-
-          <ul>
-            <li><a href="https://github.com/clintjedwards">Github</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/clintjedwards">Linkedin</a>
-            </li>
-            <li><a href="https://keybase.io/cje3295">Keybase</a></li>
-          </ul>
-        </div>
-      </div>
+        </h1>
     </div>
-  </body>
+    <p>
+        An aspiring master of all trades, minimalist,
+        <a href="http://masterskya.com/">jiu-jitsu</a>
+        practitioner, and
+        <a href="#">boxing</a> hobbyist. Writing software for
+        <a href="https://robinhood.engineering/">Robinhood Markets</a>.
+        Supporting the robot uprising one '<a id="tech_name">git push -f</a>'
+        at a time.
+        <br /><br />
+        <i>Based in Brooklyn, NY.</i>
+    </p>
+
+    <ul>
+        <li><a href="https://github.com/clintjedwards">Github</a></li>
+        <li>
+            <a href="https://www.linkedin.com/in/clintjedwards">Linkedin</a>
+        </li>
+        <li><a href="https://keybase.io/cje3295">Keybase</a></li>
+    </ul>
+</body>
+
 </html>
