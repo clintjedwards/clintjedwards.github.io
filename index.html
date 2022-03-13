@@ -27,9 +27,38 @@
             document.getElementById("tech_name").innerText = techWords[rnd];
         };
     </script>
+    <script type="text/javascript">
+        function switchTheme() {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var targetTheme = "light";
+
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            document.querySelectorAll("a").forEach(x => x.setAttribute('data-theme', targetTheme));
+            localStorage.setItem('theme', targetTheme);
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var toggle = document.getElementById("theme-toggle");
+
+            var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            if (storedTheme) {
+                document.documentElement.setAttribute('data-theme', storedTheme);
+                document.querySelectorAll("a").forEach(x => x.setAttribute('data-theme', storedTheme));
+            }
+        });
+    </script>
 </head>
 
 <body>
+    <label class="switch">
+        <input id="theme-toggle" type="checkbox" onclick="switchTheme()">
+        <span class="slider"></span>
+    </label>
+
     <div class="header">
         <h1>
             <img class="icon mainlogo" src="images/sun.svg" /><br />Clint J
