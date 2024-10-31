@@ -46,6 +46,10 @@ a[data-theme="dark"] {
   color: #828fff;
 }
 
+ul li {
+  padding: 3px 0;
+}
+
 .switch {
   position: relative;
   float: right;
